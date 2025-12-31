@@ -63,7 +63,7 @@ def get_llm(gemini_api_key):
     - llm: An instance of Google Gemini Pro
     """
     # Create llm
-    llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=gemini_api_key, 
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=gemini_api_key, 
                                  convert_system_message_to_human=True, temperature=0.0)
     return llm
 
